@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <title>calculator</title>
+<head>
+    <body>
+        
+        <div id="calculator">
+            
+            <div><h1 id="display"></h1></div>
+            <div ><input type="text" id="displaybox" ></div>
+            <div id="but">
+                <div id="head"><h4 >Simple calculator</h4></div>
+                <div id="btn">
+                    <button onclick="myfunctiona()" id="bt">AC</button>
+                    <button onclick="myfunctionb()"  id="bt">del</button>
+                    <button onclick="myfunctionc()"  id="bt">%</button>
+                    <button onclick="myfunction('/')"  id="bt">/</button>
+                </div>
+                
+                <div id="btn">
+                    <button onclick="myfunction(7)"  id="btt">7</button>
+                    <button onclick="myfunction(8)"  id="btt">8</button>
+                    <button onclick="myfunction(9)"  id="btt">9</button>
+                    <button onclick="myfunction('*')"  id="bt">*</button>
+                </div>
+                
+                <div id="btn">
+                    <button onclick="myfunction(4)"  id="btt">4</button>
+                    <button onclick="myfunction(5)"  id="btt">5</button>
+                    <button onclick="myfunction(6)"  id="btt">6</button>
+                    <button onclick="myfunction('-')"  id="bt">-</button>
+                </div>
+
+                <div id="btn">
+                    <button onclick="myfunction(1)"  id="btt">1</button>
+                    <button onclick="myfunction(2)"  id="btt">2</button>
+                    <button onclick="myfunction(3)"  id="btt">3</button>
+                    <button onclick="myfunction('+')"  id="bt">+</button>
+                </div>
+
+                <div id="btn">
+                    <button onclick="myfunction(0)"  id="btt">0</button>
+                    <button onclick="myfunction('.')"  id="btt">.</button>
+                    
+                    <button onclick="myfunctiont()"  id="bttt">=</button>
+                </div>
+                
+                
+
+
+            </div>
+        </div>
+
+
+<script>
+    var x  =document.getElementById("displaybox")
+    function myfunction(e){  
+         document.getElementById("displaybox").value+=e
+        // x.value += e;
+        }
+    function myfunctiont(){
+        x.value=eval(x.value);
+        document.getElementById("display").innerHTML=eval(x.value)
+        }
+        
+        function myfunctionc(){
+            x.value=(x.value/100)
+        }
+
+        function myfunctiona(){
+            x.value=""
+            document.getElementById("display").innerHTML=""
+            x.value.innerHTML=""
+        }
+
+        function myfunctionb(){
+            x.value =x.value. substr(0,x.value.length-1)
+        }
+       
+
+// function myfunctiont(){
+//         x.value=eval(x.value);
+
+
+
+// document.getElementById("display").innerHTML= eval(x.value)
+// }
+        
+    
+</script>
+    </body>
+</head>
+
