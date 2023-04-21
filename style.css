@@ -1,5 +1,8 @@
 body{
     background-color:orange;
+    border: 5px solid blue;
+padding: 0;
+margin: 0;    
     /* overflow: scroll; */
 }
 #head{
@@ -11,17 +14,17 @@ body{
 }
 #calculator{
     background-color: rgba(0, 0, 0, 0.895);
-    border: 2px solid red;
-    width: 20vw;
+    border: 2px solid #ff0000;
+    width: 400px;
     /* height: 90vh; */
     /* align-items: center; */
-    margin-left: 20%;
+    /* margin-left: 20%; */
     /* box-shadow: 0px 0px 10px 2px  #796758; */
     border-radius: 10px;
 }
 #displaybox{
     border: 2px solid yellow;
-    width: 15vw;
+    /* width: 15vw; */
     font-size: larger;
     height: 20vh;
     margin: 13%;
@@ -36,13 +39,13 @@ body{
 #display{
     color: white;
     position: absolute;
-    margin-left:10% ;
-    top: 10%;
+    margin-left: 6%;
+    margin-top: 8%;
 }
 #btn{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
+    /* width: 100%; */
     margin-top: 10px;
 }
 #btt{
@@ -50,7 +53,7 @@ body{
     color: white;
     background-color: black;
 margin-bottom: 2em;
-width: 2vw;
+/* width: 2vw; */
 box-shadow: 2px,2px,1px,2px;
     
 }
@@ -79,7 +82,7 @@ box-shadow: 2px,2px,2px,2px;
         justify-content: center;
     }
     #calculator{
-        width: 70%;
+        width: 300px;
         /* position: relative; */
         margin: 10%;
     }
@@ -89,43 +92,35 @@ box-shadow: 2px,2px,2px,2px;
         align-items: center ;
 
     }
-    #btt{
-        width: auto;
-    }
-    #bttt{
-        width: 20vw;
-    }
-    #bt{
-        height: 4vh;
+    #display{
+        display: flex;
+        margin-left: 10%;
+        /* top: 1%; */
+        /* width: auto; */
     }
 }
 @media screen and (min-width:800px) {
     #calculator{
-        width: 35%;
+        width:400px;
         align-items: center;
         /* position:absolute; */
         margin-top: 10%;
     }
      #displaybox{
-        width: 25.5vw;
-        /* position: relative; */
+        width: 70.5%;
+     
         align-items: center ;
 
     }
     #display{
-        position: absolute;
-    margin-left:15% ;
-    top: 8%;
-    }
-    #btt{
-        width: 3vw;
+       display: flex;
+       margin-left: 60px;
+       margin-top:75px;
+       /* justify-content: right; */
     }
     #bttt{
-       width: 8.5vw;    
+       width: 95px;    
     }
-    button{
-        width: 3vw;
-        font-size: 1.4em;
-    }
+    
     
 }
